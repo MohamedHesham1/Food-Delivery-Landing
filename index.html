@@ -2,11 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/grover-icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grover Grocery Food Delivery</title>
   </head>
   <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__nav-logo">
+          <img
+            src="assets/icons/grover-logo.png"
+            class="header__nav-logo-img"
+            alt="groover-logo"
+            width="154.9px"
+            height="41.58px"
+          />
+        </div>
+        <ul class="header__nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+        <form action="" class="header__nav-form">
+          <input
+            type="text"
+            name="search-bar"
+            aria-label="search-bar"
+            placeholder="search"
+          />
+          <button class="header__nav-btn" aria-label="search" type="submit">
+            <svg class="header__nav-shopping-icon" width="24px" height="24px">
+              <use
+                xlink:href="assets/icons/shopping-icon.svg#shopping-icon"
+              ></use>
+            </svg>
+          </button>
+        </form>
+      </nav>
+    </header>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
