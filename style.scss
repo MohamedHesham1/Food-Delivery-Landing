@@ -82,15 +82,17 @@ $gray: #676767;
     }
   }
   &__form {
-    @include space-around;
+    @include flex-centered;
     position: relative;
-    align-items: center;
     width: 289px;
     height: 54px;
-    padding-inline: 20px;
     border-radius: 8px;
     background: #ffffff;
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.04);
+  }
+  &__search-icon {
+    margin-inline-start: 17px;
+    margin-inline-end: 8.55px;
   }
   &__search-bar {
     border: none;
@@ -110,6 +112,8 @@ $gray: #676767;
     background: transparent;
     border: none;
     cursor: pointer;
+    padding-block: 13px 17px;
+    padding-inline-end: 20px;
   }
   &__notification {
     position: absolute;
@@ -130,7 +134,8 @@ $gray: #676767;
 // navbar responsive
 .nav__checkbox,
 .nav__hamburger-lines,
-.nav__list--hamburger {
+.nav__list--hamburger,
+.nav__hamburger-menu {
   display: none;
 }
 @media (max-width: 975px) {
@@ -147,6 +152,9 @@ $gray: #676767;
   .nav__list,
   .nav__form {
     display: none;
+  }
+  .nav__hamburger-menu {
+    display: block;
   }
   .nav__hamburger-lines {
     display: flex;
@@ -189,7 +197,7 @@ $gray: #676767;
     cursor: pointer;
   }
   .nav__list--hamburger {
-    display: flex;
+    display: none;
     justify-content: flex-start;
     align-items: center;
     gap: 2rem;
@@ -204,6 +212,7 @@ $gray: #676767;
   }
   .nav__checkbox:checked {
     & ~ .nav__list--hamburger {
+      display: flex;
       transform: translateX(0);
       .nav__form {
         display: flex;
@@ -222,3 +231,5 @@ $gray: #676767;
     }
   }
 }
+// main
+//    hero section
