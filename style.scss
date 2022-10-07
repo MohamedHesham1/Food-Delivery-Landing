@@ -178,7 +178,7 @@ body {
 // main
 //  hero section
 .hero {
-  @include flex(space-around, center);
+  @include flex(space-between, center);
   flex-wrap: wrap;
   height: 605px;
   margin-block: 39px 140px;
@@ -211,6 +211,7 @@ body {
   color: #2e2e2e;
   span {
     color: rgba(245, 71, 72, 1);
+    font-weight: 600;
   }
 }
 .hero__sub {
@@ -230,30 +231,40 @@ body {
 
 //    hero img
 .hero__element {
-  @include flex(center);
+  display: flex;
   position: relative;
   width: 619px;
   height: 605px;
   .hero__item-card {
     position: absolute;
     inset-inline-start: 0;
-    inset-block-start: 109px;
+    inset-block-start: 106px;
     width: 182px;
     height: 272px;
     z-index: 90;
   }
 }
-
 .hero__img {
   background-image: url("assets/shapes/lines-shape.svg"),
     url("assets/imgs/fill.png");
   width: 417px;
   height: 605px;
+  margin-inline-start: 141px;
   background-repeat: no-repeat;
   background-position: bottom;
   @include flex(center, center);
+  .chef-img {
+    transform: translateY(24px);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 91%, 0% 100%);
+  }
 }
-.chef-img {
-  transform: translateY(24px);
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 91%, 0% 100%);
+.hero__delivary-card {
+  position: absolute;
+  inset-inline-end: 0;
+  inset-block-start: 106px;
+}
+.arrow-shape {
+  position: absolute;
+  inset-inline-end: 20.3px;
+  inset-block-start: 223.65px;
 }
