@@ -1,0 +1,29 @@
+.scroll-hidden {
+  overflow: hidden;
+}
+.hidden {
+  display: none;
+}
+.h1-fluid {
+  font-size: 3.051875rem;
+  font-size: clamp(
+    3.051875rem,
+    2.479829545454545rem + 2.860227272727273vw,
+    4.625rem
+  );
+}
+.btn {
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+}
+.btn--fill {
+  @extend .btn;
+  height: 70px;
+  background-color: #f86061;
+}
+.btn--transparent {
+  @extend .btn;
+  width: 200px;
+  background-color: transparent;
+}
