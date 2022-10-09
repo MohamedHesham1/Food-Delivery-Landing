@@ -8,11 +8,11 @@ body {
 }
 // navbar
 .nav {
-  @include flex(space-between, center);
+  @include flex(space-around, center);
   padding-block-start: 32px;
   padding-inline: 135px;
-  &__logo {
-    padding-inline-end: 6px;
+  .logo {
+    display: block;
   }
   &__list {
     @include flex(space-between);
@@ -178,12 +178,21 @@ body {
 // main
 //  hero section
 .hero {
-  @include flex(space-between, center);
+  // @include flex(center, center);
+  // flex-wrap: wrap;
+  // height: 605px;
+  // margin-block: 39px 140px;
+  // gap: 38px;
+  // padding-inline: 135px 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   height: 605px;
   margin-block: 39px 140px;
   gap: 38px;
-  padding-inline: 135px 70px;
+
+  flex-basis: 1235px;
 }
 .hero__main {
   @include flex(center, flex-start);
@@ -266,5 +275,6 @@ body {
 .arrow-shape {
   position: absolute;
   inset-inline-end: 20.3px;
-  inset-block-start: 223.65px;
+  inset-block-start: 199px;
+  z-index: -1;
 }
