@@ -178,20 +178,12 @@ body {
 // main
 //  hero section
 .hero {
-  // @include flex(center, center);
-  // flex-wrap: wrap;
-  // height: 605px;
-  // margin-block: 39px 140px;
-  // gap: 38px;
-  // padding-inline: 135px 70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   height: 605px;
   margin-block: 39px 140px;
   gap: 38px;
-
   flex-basis: 1235px;
 }
 .hero__main {
@@ -227,15 +219,18 @@ body {
   @include text-style(400, 18px, 30px, #676767);
   margin-block-start: 22px;
 }
+.hero__element--mobile {
+  display: none;
+}
 .hero__btn-group {
   @include flex(space-between, center);
   margin-block-start: 60px;
-
   width: 444px;
 }
 .btn--fill {
-  @include text-style(500, 20px, 20px, #fffafa);
   width: 186px;
+  color: #fffafa;
+  font-weight: 500;
 }
 
 //    hero img
@@ -277,4 +272,44 @@ body {
   inset-inline-end: 20.3px;
   inset-block-start: 199px;
   z-index: -1;
+}
+//  hero for mobile
+@media (max-width: 1250px) {
+  .hero {
+    height: auto;
+    margin-block: 39px 80px;
+    gap: 0;
+    &__element {
+      display: none;
+    }
+    &__element--mobile {
+      display: block;
+    }
+  }
+  .hero__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+    flex-basis: 80%;
+    .hero__header {
+      line-height: 70px;
+    }
+  }
+  .hero__content {
+    @include flex(center, center);
+    flex-direction: column;
+  }
+  .hero__btn-group {
+    width: 80%;
+    gap: 4vw;
+    justify-content: center;
+    margin-block-start: 40px;
+    .btn--fill {
+      width: min(186px, 62%);
+      height: 65px;
+    }
+  }
 }

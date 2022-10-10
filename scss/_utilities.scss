@@ -5,14 +5,17 @@
   display: none;
 }
 .h1-fluid {
-  font-size: 3.051875rem;
-  font-size: clamp(
-    3.051875rem,
-    2.479829545454545rem + 2.860227272727273vw,
-    4.625rem
-  );
+  font-size: 3rem;
+  font-size: clamp(3rem, 2.5400943396226414rem + 1.962264150943396vw, 4.625rem);
 }
+
 .btn {
+  font-size: 0.875rem;
+  font-size: clamp(
+    0.875rem,
+    0.7688679245283019rem + 0.45283018867924524vw,
+    1.25rem
+  );
   border-radius: 12px;
   display: grid;
   place-items: center;
@@ -27,3 +30,11 @@
   width: 200px;
   background-color: transparent;
 }
+// .section__sub {
+//   font-size: 0.875rem;
+//   font-size: clamp(
+//     0.875rem,
+//     0.8042452830188679rem + 0.3018867924528302vw,
+//     1.125rem
+//   );
+// }
