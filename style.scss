@@ -1,7 +1,6 @@
 @use "scss/_reset.scss";
 @use "scss/_mixins" as *;
 @use "scss/utilities" as *;
-
 // global
 body {
   font-family: "Poppins", sans-serif;
@@ -190,7 +189,6 @@ body {
   @include flex(center, flex-start);
   flex-direction: column;
   flex-basis: 578px;
-  height: 542px;
 }
 .hero__ad {
   @include flex(center, center);
@@ -273,7 +271,7 @@ body {
   inset-block-start: 199px;
   z-index: -1;
 }
-//  hero for mobile
+//  hero-mobile
 @media (max-width: 1250px) {
   .hero {
     height: auto;
@@ -311,5 +309,88 @@ body {
       width: min(186px, 62%);
       height: 65px;
     }
+  }
+}
+//    services section
+.services {
+  @include flex(center, center);
+  flex-direction: column;
+  gap: 69px;
+  background-color: #fef5f5;
+  height: 760px;
+  text-align: center;
+  margin-block-end: 109px;
+}
+.services__header {
+  width: 627px;
+  height: 140px;
+  p {
+    @include text-style(500, 18px, 24px, #f54748);
+  }
+}
+.services__body {
+  @include flex(space-between, center);
+  gap: 50px;
+  width: 1028px;
+}
+
+.card {
+  @include flex(center, center);
+  flex-direction: column;
+  gap: 61.3px;
+  text-align: center;
+  width: 300px;
+  height: 310px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  &__img {
+    img {
+      filter: drop-shadow(0px 25px 30px rgba(248, 67, 68, 0.1));
+    }
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    width: 243px;
+    gap: 14.66px;
+  }
+  &__title {
+    @include text-style(600, 22px, 33px, #2e2e2e);
+  }
+  &__subtitle {
+    @include text-style(400, 14px, 25px, #676767);
+  }
+}
+.card-2 {
+  position: relative;
+  width: 327.87px;
+  height: 349.93px;
+}
+.card--front {
+  position: relative;
+  z-index: 99;
+  inset-inline-start: 18px;
+  inset-block-start: 2px;
+}
+.card--background {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 27.86px;
+  width: 310px;
+  height: 334.16px;
+  background-color: #fe6a6a;
+  border-radius: 12px;
+  transform: rotate(-3deg);
+}
+//    services-mobile
+@media (max-width: 1050px) {
+  .services {
+    height: auto;
+    padding-block: 95px;
+  }
+  .services__body {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
