@@ -387,10 +387,22 @@ body {
   .services {
     height: auto;
     padding-block: 95px;
+    &__header {
+      width: 80%;
+      height: auto;
+    }
+    &__body {
+      width: 80%;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
-  .services__body {
-    width: 80%;
-    flex-wrap: wrap;
-    justify-content: center;
+}
+@media (max-width: 380px) {
+  .card--front {
+    inset-inline-start: -4px;
+  }
+  .card--background {
+    inset-inline-start: 5.86px;
   }
 }
