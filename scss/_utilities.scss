@@ -16,7 +16,7 @@
   text-transform: capitalize;
   color: #2e2e2e;
 }
-.section__sub {
+.section-sub {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -33,6 +33,7 @@
   border-radius: 12px;
   display: grid;
   place-items: center;
+  border: none;
 }
 .btn--fill {
   @extend .btn;

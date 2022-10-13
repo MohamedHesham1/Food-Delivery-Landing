@@ -224,11 +224,11 @@ body {
   @include flex(space-between, center);
   margin-block-start: 60px;
   width: 444px;
-}
-.btn--fill {
-  width: 186px;
-  color: #fffafa;
-  font-weight: 500;
+  .btn--fill {
+    width: 186px;
+    color: #fffafa;
+    font-weight: 500;
+  }
 }
 
 //    hero img
@@ -319,13 +319,13 @@ body {
   background-color: #fef5f5;
   height: 760px;
   text-align: center;
-  margin-block-end: 109px;
 }
 .services__header {
   width: 627px;
   height: 140px;
   p {
     @include text-style(500, 18px, 24px, #f54748);
+    letter-spacing: 0.01em;
   }
 }
 .services__body {
@@ -333,7 +333,6 @@ body {
   gap: 50px;
   width: 1028px;
 }
-
 .card {
   @include flex(center, center);
   flex-direction: column;
@@ -404,5 +403,63 @@ body {
   }
   .card--background {
     inset-inline-start: 5.86px;
+  }
+}
+//    discover section
+.discover {
+  @include flex(center, center);
+  gap: 110px;
+  height: 738px;
+  margin-block: 140px;
+}
+.discover__content {
+  @include flex(center, flex-start);
+  flex-direction: column;
+  width: 394px;
+  height: 372px;
+}
+.discover__header {
+  p {
+    @include text-style(500, 18px, 24px, #03a66b);
+    letter-spacing: 0.01em;
+  }
+}
+.discover__sub {
+  margin-block: 22px 50px;
+}
+.discover__btn {
+  width: 201px;
+  height: 70px;
+  color: #fffafa;
+  flex-shrink: 0;
+}
+//    discover-mobile
+@media (max-width: 1050px) {
+  .discover {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 56px;
+    height: auto;
+    margin-block: 70px;
+    &__img {
+      width: 80%;
+    }
+  }
+  .discover__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    text-align: center;
+  }
+  .discover__btn {
+    width: 201px;
+    height: 70px;
+    color: #fffafa;
+    font-size: 20px;
   }
 }
