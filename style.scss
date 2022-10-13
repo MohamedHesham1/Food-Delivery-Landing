@@ -323,9 +323,8 @@ body {
 .services__header {
   width: 627px;
   height: 140px;
-  p {
-    @include text-style(500, 18px, 24px, #f54748);
-    letter-spacing: 0.01em;
+  .header-title {
+    color: #f54748;
   }
 }
 .services__body {
@@ -418,12 +417,7 @@ body {
   width: 394px;
   height: 372px;
 }
-.discover__header {
-  p {
-    @include text-style(500, 18px, 24px, #03a66b);
-    letter-spacing: 0.01em;
-  }
-}
+
 .discover__sub {
   margin-block: 22px 50px;
 }
@@ -436,22 +430,16 @@ body {
 //    discover-mobile
 @media (max-width: 1050px) {
   .discover {
-    display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
     gap: 56px;
     height: auto;
     margin-block: 70px;
-    &__img {
+    .section-img {
       width: 80%;
     }
   }
   .discover__content {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
     width: 90%;
     height: auto;
     text-align: center;
