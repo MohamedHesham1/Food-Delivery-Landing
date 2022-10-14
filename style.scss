@@ -292,8 +292,8 @@ body {
     height: auto;
     text-align: center;
     flex-direction: column;
-    flex-basis: 90%;
     .hero__header {
+      width: 90%;
       line-height: 60px;
     }
   }
