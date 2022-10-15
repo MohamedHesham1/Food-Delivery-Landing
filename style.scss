@@ -495,10 +495,13 @@ body {
 .download {
   @include flex(center, center);
   height: 755px;
-  margin-block: 101.79px 55.21px;
+  margin-block: 101.79px 127px;
   column-gap: 180.61px;
   row-gap: 50px;
   background: #fef5f5;
+  .header-title {
+    color: #f54748;
+  }
 }
 .download__content {
   width: 466px;
@@ -517,6 +520,7 @@ body {
   border: 1.5px solid #eedcdc;
   width: 208px;
   gap: 17px;
+  color: #2e2e2e;
 }
 //    download-mobile
 @media (max-width: 1102px) {
@@ -524,6 +528,7 @@ body {
     flex-wrap: wrap;
     height: auto;
     padding-block: 60px;
+    margin-block-end: 56px;
   }
   .download__img {
     order: 2;
@@ -545,5 +550,116 @@ body {
   .download__btn {
     gap: 17px;
     height: 80px;
+  }
+}
+//  footer
+footer {
+  @include flex(space-between);
+  flex-direction: column;
+  height: 463px;
+  margin-inline: 135px 151px;
+}
+.contacts {
+  @include flex(space-between);
+  height: 226.79px;
+  img {
+    margin-block-end: 25px;
+  }
+  a {
+    color: #676767;
+    line-height: 26px;
+  }
+  p {
+    color: #676767;
+  }
+  & > li:first-child {
+    width: 266px;
+    height: 144.79px;
+  }
+}
+.column-wrapper {
+  display: contents;
+
+  & > li:nth-child(1) {
+    margin-inline-start: 198px;
+  }
+  & > li:nth-child(2) {
+    margin-inline: 142px 85px;
+  }
+  & > li:last-child {
+    width: 191px;
+  }
+}
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contacts__header {
+  margin-block-end: 30px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  font-size: 18px;
+  color: #2e2e2e;
+}
+.last-child {
+  justify-content: flex-start;
+}
+.Copyright {
+  display: flex;
+  padding-block: 30px;
+  border-block-start: 1px solid #ececec;
+  p {
+    margin-inline-end: auto;
+    font-weight: 400;
+    font-size: 14px;
+    color: #8c8c8c;
+  }
+  .links {
+    display: flex;
+    gap: 25px;
+  }
+  .links a {
+    font-weight: 500;
+    font-size: 14px;
+    color: #747474;
+  }
+}
+//  footer-mobile
+@media (max-width: 1298px) {
+  footer {
+    height: auto;
+    margin-inline: 17px;
+    .footer-logo {
+      width: 50%;
+      height: 144.79px;
+      text-align: center;
+    }
+  }
+  .contacts {
+    flex-direction: column;
+    height: auto;
+    gap: 90px;
+    align-items: center;
+    padding-block: 50px;
+  }
+
+  .column-wrapper {
+    display: flex;
+    column-gap: 4vw;
+    row-gap: 6vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-inline: 20px;
+    text-align: center;
+    & > li:nth-child(1) {
+      margin: 0;
+    }
+    & > li:nth-child(2) {
+      margin: 0;
+    }
+  }
+  .contacts__header {
+    margin: 0;
   }
 }
