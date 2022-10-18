@@ -522,6 +522,7 @@ body {
   gap: 17px;
   color: #2e2e2e;
 }
+
 //    download-mobile
 @media (max-width: 1102px) {
   .download {
@@ -558,6 +559,9 @@ footer {
   flex-direction: column;
   height: 463px;
   margin-inline: 135px 151px;
+  & a:hover {
+    text-decoration: underline;
+  }
 }
 .contacts {
   @include flex(space-between);
