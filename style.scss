@@ -635,9 +635,9 @@ footer {
     height: auto;
     margin-inline: 17px;
     .footer-logo {
-      width: 70%;
+      width: auto;
       height: 144.79px;
-      text-align: center;
+      text-align: left;
       font-size: 18px;
     }
   }
@@ -646,17 +646,16 @@ footer {
     flex-direction: column;
     height: auto;
     gap: 90px;
-    align-items: center;
+    align-items: flex-start;
     padding-block: 50px;
+    padding-inline: 3vw;
   }
   .column-wrapper {
     display: flex;
-    column-gap: 4vw;
-    row-gap: 6vw;
+    gap: 9vw;
     flex-wrap: wrap;
-    justify-content: center;
-    padding-inline: 20px;
-    text-align: center;
+    justify-content: flex-start;
+    text-align: left;
     & > li:nth-child(1) {
       margin: 0;
     }
