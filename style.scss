@@ -369,26 +369,24 @@ body {
   }
 }
 .card-2 {
-  position: relative;
-  width: 327.87px;
-  height: 349.93px;
+  transform-style: preserve-3d;
+
+  // width: 327.87px;
+  // height: 349.93px;
 }
-.card--front {
-  position: relative;
-  z-index: 99;
-  inset-inline-start: 18px;
-  inset-block-start: 2px;
-}
-.card--background {
+
+.card-2::after {
+  content: " ";
   position: absolute;
-  inset-block-start: 0;
-  inset-inline-start: 27.86px;
+  inset-block-start: -2px;
+  inset-inline-start: 8.86px;
   width: 310px;
   height: 334.16px;
   background-color: #fe6a6a;
   border-radius: 12px;
-  transform: rotate(-3deg);
+  transform: rotate(-3deg) translateZ(-1px);
 }
+
 //    services-mobile
 @media (max-width: 1050px) {
   .services {
@@ -405,12 +403,9 @@ body {
     }
   }
 }
-@media (max-width: 380px) {
-  .card--front {
-    inset-inline-start: -4px;
-  }
-  .card--background {
-    inset-inline-start: 5.86px;
+@media (max-width: 403px) {
+  .card-2::after {
+    width: 282px;
   }
 }
 //    discover section
