@@ -10,9 +10,6 @@ body {
   @include flex(space-around, center);
   padding-block-start: 32px;
   padding-inline: 135px;
-  .logo {
-    display: block;
-  }
   &__list {
     @include flex(space-between);
     width: min(312px, 24vw);
@@ -171,6 +168,12 @@ body {
       .line3 {
         transform: rotate(-45deg);
       }
+    }
+  }
+  .nav__checkbox:focus {
+    & ~ .nav__hamburger-lines {
+      outline: 5px auto #000000;
+      outline-offset: 4px;
     }
   }
 }
