@@ -31,13 +31,15 @@ body {
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.04);
   }
   &__search-icon {
+    width: 100%;
     margin-inline-start: 17px;
-    margin-inline-end: 8.55px;
+    margin-inline-end: -241.45px;
   }
   &__search-bar {
     border: none;
     background-color: transparent;
     outline: transparent;
+    height: 100%;
     &::placeholder {
       color: #232323;
       font-weight: 500;
@@ -170,7 +172,7 @@ body {
       }
     }
   }
-  .nav__checkbox:focus {
+  .nav__checkbox:focus-visible {
     & ~ .nav__hamburger-lines {
       outline: 5px auto #000000;
       outline-offset: 4px;
