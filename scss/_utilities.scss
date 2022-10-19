@@ -44,7 +44,6 @@
   cursor: pointer;
 }
 .btn--fill {
-  @extend .btn;
   height: 70px;
   background-color: #f86061;
 }
@@ -55,7 +54,6 @@
   color: #f86061 !important;
 }
 .btn--transparent {
-  @extend .btn;
   border: 1.5px solid #f86061;
   width: 200px;
   background-color: transparent;
