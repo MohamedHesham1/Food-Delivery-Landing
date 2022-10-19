@@ -289,6 +289,9 @@ body {
     &__element--mobile {
       display: block;
     }
+    &__sub {
+      padding-inline: 20px;
+    }
   }
   .hero__main {
     display: flex;
@@ -618,6 +621,7 @@ footer {
   display: flex;
   padding-block: 30px;
   border-block-start: 1px solid #ececec;
+  gap: 4vw;
   p {
     margin-inline-end: auto;
     font-weight: 400;
