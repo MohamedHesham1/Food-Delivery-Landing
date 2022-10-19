@@ -368,14 +368,14 @@ body {
     @include text-style(400, 14px, 25px, #676767);
   }
 }
-.card-2 {
+.card--open {
   transform-style: preserve-3d;
 
   // width: 327.87px;
   // height: 349.93px;
 }
 
-.card-2::after {
+.card--open::after {
   content: " ";
   position: absolute;
   inset-block-start: -2px;
@@ -403,9 +403,9 @@ body {
     }
   }
 }
-@media (max-width: 403px) {
-  .card-2::after {
-    width: 282px;
+@media (max-width: 415px) {
+  .card--open::after {
+    width: 74vw;
   }
 }
 //    discover section
