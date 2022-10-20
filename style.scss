@@ -1,6 +1,8 @@
 @use "scss/_reset.scss";
 @use "scss/_mixins" as *;
 @use "scss/utilities" as *;
+@use "./node_modules/sal.js/dist/sal.css" as *;
+
 // global
 body {
   font-family: "Poppins", sans-serif;
@@ -81,9 +83,6 @@ body {
   display: none;
 }
 @media (max-width: 975px) {
-  // body {
-  //   overflow-x: hidden;
-  // }
   .nav {
     display: block;
     padding-inline: 0;
@@ -369,9 +368,6 @@ body {
 }
 .card--open {
   transform-style: preserve-3d;
-
-  // width: 327.87px;
-  // height: 349.93px;
 }
 
 .card--open::after {
