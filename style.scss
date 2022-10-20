@@ -61,8 +61,8 @@ body {
     position: absolute;
     display: grid;
     place-items: center;
-    inset-block: 0;
-    inset-inline-end: 0;
+    inset-block: -13px;
+    inset-inline-end: -5px;
     width: 28px;
     height: 28px;
     border-radius: 50%;
@@ -235,7 +235,6 @@ body {
     font-weight: 500;
   }
 }
-
 //    hero img
 .hero__element {
   display: flex;
