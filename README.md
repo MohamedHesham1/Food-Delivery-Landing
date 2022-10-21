@@ -2,7 +2,7 @@
 a training UI design for a food delivery website
 
 ## Table of contents
-* [Introduction] (#introduction)
+* [Introduction](#introduction)
 
 ##Introduction
 i created this project for the aim of mastering sass and BEM methodology and maintaining a good level of best practicis, 
